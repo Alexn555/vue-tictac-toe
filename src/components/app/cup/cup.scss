@@ -1,0 +1,30 @@
+// cup holder
+.cup-wrapper {
+  background: #ccc;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.cup-holder {
+  list-style-type: none;
+  padding: 0;
+  color: transparent;
+  oveflow: hidden;
+}
+
+.cup-holder-img {
+  background-position: 50% 50%;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+}
+
+.o-cup {
+  @extend .cup-holder;
+  background: #2ecc71;
+}
+
+.x-cup {
+  @extend .cup-holder;
+  background: #16a085;
+}

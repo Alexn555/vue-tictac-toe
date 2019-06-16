@@ -1,0 +1,42 @@
+@import '../theme-darkblue';
+
+.grid {
+    background-color: $gridBg;
+    color: $gridText;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grid:hover
+{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.gameStatus {
+    margin: 0;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: $statusMove;
+    color: $statusText;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.gameStatus:hover {
+  box-shadow: inset 0 0 0 5px #53a7ea;
+}
+
+.statusTurn {
+	background-color: $statusMove;
+}
+
+.statusWin {
+	background-color: $statusWin;
+}
+
+.statusDraw {
+	background-color: $statusDraw;
+}
