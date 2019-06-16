@@ -1,26 +1,10 @@
-import xPointSound from '../assets/sounds/xpoint.wav';
-import oPointSound from '../assets/sounds/opoint.wav';
-import restartSound from '../assets/sounds/restart.wav';
-import drawSound from '../assets/sounds/draw.wav';
+const xPointSound = '../assets/sounds/xpoint.wav';
+const restartSound = '../assets/sounds/restart.wav';
+const drawSound = '../assets/sounds/draw.wav';
 
 let soundsOn = false;
 
 export default class SoundManager {
-	   
-   static importSound(soundName: string){
-	   switch(soundName) {
-		 case 'xpoint':
-			return xPointSound;
-         case 'opoint':
-            return oPointSound;
-		 case 'draw':
-			return drawSound;
-		 case 'restart': 
-		 default:
-		 return restartSound;
-	   }
-	   return restartSound;
-   }
 
    static toggleVolume(){
 	   soundsOn = !soundsOn;
@@ -34,10 +18,6 @@ export default class SoundManager {
         SoundManager.playSound(xPointSound);
     }
 
-    static playoPoint(){
-        SoundManager.playSound(oPointSound);
-    }
-
     static playDraw(){
         SoundManager.playSound(drawSound);
 	}
@@ -46,7 +26,7 @@ export default class SoundManager {
         SoundManager.playSound(restartSound);
 	}
 
-    static playSound(sound) {
+    static playSound(sound: string) {
 		if (!soundsOn) { return; }
 		let audio = new Audio(sound);
         if (!audio) { return; }

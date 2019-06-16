@@ -14,7 +14,6 @@ export default class Cell extends Vue {
     	super();
     	this.frozen = false; // enables the player to action (place mark)
 		this.mark = ''; // holds either X or O to be displayed in the td
-        SoundManager.importSound('xpoint');
     }
 
     created () {

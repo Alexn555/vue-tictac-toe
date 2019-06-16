@@ -53,6 +53,7 @@ Manual
           all components are divided: file.vue (template and includes), file.ts - script, file.scss - style
        utils / - utility classes
          soundManager - sounds handler
+       tests / - unit tests
        theme-darkblue.scss - main styling of (mostly) background, text colors
                   to create ability to switch diffrent color schemes
        main.ts - start point of application

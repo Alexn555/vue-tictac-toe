@@ -46,9 +46,7 @@ export default class Grid extends Vue {
           [1, 2, 3], [4, 5, 6], [7, 8, 9], // rows
           [1, 4, 7], [2, 5, 8], [3, 6, 9], // columns
           [1, 5, 9], [3, 5, 7]             // diagonals
-      ]
-      SoundManager.importSound('restart');
-      SoundManager.importSound('draw');
+      ];
   }
 
   get nonActivePlayer() { // computed property
@@ -113,7 +111,7 @@ export default class Grid extends Vue {
 
   // compare cell values
   cellValuesEqual() {
-    var len = arguments.length;
+    const len = arguments.length;
     for (var i = 1; i < len; i++){
         if (arguments[i] === '' || arguments[i] !== arguments[i-1]){
             return false;
