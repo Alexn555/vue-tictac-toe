@@ -34,6 +34,8 @@ Manual
  1. Install node modules -> npm install
  2. Run the game  -> npm run serve
 
+ Demo: http://norwaydict.com/vue-tictac-toe/
+
 ```
  Plot
   Classic vuejs typescript tic tac toe using scss markup
