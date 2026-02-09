@@ -34,7 +34,7 @@ Manual
  1. Install node modules -> npm install
  2. Run the game  -> npm run serve
 
- Demo: http://norwaydict.com/vue-tictac-toe/
+ Demo: https://alexn555-racing.com/projects/vue-tictac-toe/
 
 ```
  Plot
